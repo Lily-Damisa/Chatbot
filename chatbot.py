@@ -34,21 +34,42 @@ st.title("Chatbot 🤖")
 #Our CSS Code
 st.markdown("""
     <style>
-        .chat-container {
-            padding: 20px;
-            font-family: Arial, sans-serif;
+        # .chat-container {
+        #     padding: 20px;
+        #     font-family: Arial, sans-serif;
+        # }
+        # .user-message {
+        #     background-color: #e1ffc7;
+        #     border-radius: 10px;
+        #     padding: 10px;
+        #     margin: 5px 0;
+        # }
+        # .bot-message {
+        #     background-color: #f1f1f1;
+        #     border-radius: 10px;
+        #     padding: 10px;
+        #     margin: 5px 0;
+        # }
+         /* Dark mode styles */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000; /* Dark mode background */
+                color: #ffffff; /* Dark mode text color */
+            }
+            .user-message {
+                background-color: #444444; /* Dark mode user message */
+            }
+            .bot-message {
+                background-color: #555555; /* Dark mode bot message */
+            }
         }
+
+        /* Light mode styles */
         .user-message {
-            background-color: #e1ffc7;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 5px 0;
+            background-color: #e1ffc7; /* Light mode user message */
         }
         .bot-message {
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 5px 0;
+            background-color: #f1f1f1; /* Light mode bot message */
         }
     </style>
 """, unsafe_allow_html=True)
